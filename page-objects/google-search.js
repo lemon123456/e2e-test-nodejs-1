@@ -17,6 +17,6 @@ module.exports = {
         var selector = page.googleSearch.elements.searchInput;
 
         /** return a promise so the calling function knows the task has completed */
-        return driver.elements(selector, driver.keys(searchQuery));
+        return driver.elements(selector, driver.keys(searchQuery).keys('Enter').status(200));
     }
 };

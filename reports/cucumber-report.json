@@ -14,7 +14,7 @@
             "name": "I search Google for \"britain's got talent app\"",
             "result": {
               "status": "passed",
-              "duration": 2660916219
+              "duration": 2687055237
             },
             "line": 8,
             "match": {
@@ -27,7 +27,7 @@
             "name": "I should see some results",
             "result": {
               "status": "passed",
-              "duration": 31587054
+              "duration": 27491933
             },
             "line": 9,
             "match": {
@@ -39,7 +39,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 55935422
+              "duration": 55468473
             },
             "hidden": true,
             "match": {
@@ -67,7 +67,7 @@
             "name": "I search Google for \"angry birds app\"",
             "result": {
               "status": "passed",
-              "duration": 2455696421
+              "duration": 2547656359
             },
             "line": 12,
             "match": {
@@ -80,7 +80,7 @@
             "name": "I should see some results",
             "result": {
               "status": "passed",
-              "duration": 28779637
+              "duration": 28693977
             },
             "line": 13,
             "match": {
@@ -92,7 +92,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 55212936
+              "duration": 55386771
             },
             "hidden": true,
             "match": {

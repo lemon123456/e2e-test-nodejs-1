@@ -21,10 +21,6 @@ program
     .option('-t, --tags <tagName>', 'name of tag to run')
     .parse(process.argv);
 
-program.on('--help', function(){
-    console.log('  For more details please visit https://github.com/larryg01/webdriverio-cucumber-js#readme\n');
-});
-
 /** store browserName globally (used within world.js to build driver)
  */
 global.browserName = program.browser;

@@ -2,7 +2,7 @@ module.exports = function (){
 
     this.When(/^I search Google for "([^"]*)"$/, function (searchQuery){
 
-        return helpers.loadPage(page.googleSearch.url, 10).then(function(){
+        return helpers.loadPage(page.googleSearch.url, 30).then(function(){
 
             /** use a method on the page object which also returns a promise */
             return page.googleSearch.performSearch(searchQuery);
@@ -12,7 +12,7 @@ module.exports = function (){
     this.Then(/^I should see some results$/, function(){
 
         /** driver waitUntil returns a promise so return that */
-        return driver.waitUntil(driver.element('div.g'), 10).then(function(){
+        return driver.waitUntil(driver.element('div.g'), 30).then(function(){
 
             /** return the promise of an element to the following then */
             return driver.element('div.g')
