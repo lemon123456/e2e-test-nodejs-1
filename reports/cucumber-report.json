@@ -14,7 +14,7 @@
             "name": "I search Google for \"britain's got talent app\"",
             "result": {
               "status": "passed",
-              "duration": 2687055237
+              "duration": 2220329633
             },
             "line": 8,
             "match": {
@@ -27,7 +27,7 @@
             "name": "I should see some results",
             "result": {
               "status": "passed",
-              "duration": 27491933
+              "duration": 29568405
             },
             "line": 9,
             "match": {
@@ -39,11 +39,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 55468473
+              "duration": 55281663
             },
             "hidden": true,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:190"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:193"
             }
           }
         ],
@@ -67,7 +67,7 @@
             "name": "I search Google for \"angry birds app\"",
             "result": {
               "status": "passed",
-              "duration": 2547656359
+              "duration": 2142990323
             },
             "line": 12,
             "match": {
@@ -80,7 +80,7 @@
             "name": "I should see some results",
             "result": {
               "status": "passed",
-              "duration": 28693977
+              "duration": 28122115
             },
             "line": 13,
             "match": {
@@ -92,11 +92,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 55386771
+              "duration": 53722567
             },
             "hidden": true,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:190"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:193"
             }
           }
         ],

@@ -25,7 +25,7 @@ var driver = {},
 /** create the web browser based on global var set in index.js
  * @returns {{}}
  */
-function getDriverInstance(){
+function getDriverInstance() {
 
     driver = webdriverio.remote({
         desiredCapabilities: {
@@ -33,8 +33,11 @@ function getDriverInstance(){
             javascriptEnabled: true,
             acceptSslCerts: true,
             chromeOptions: {
-                "args": ["start-maximized"]
-
+                // "args": ["start-maximized"]
+                args: [
+                    'headless',
+                    'disable-gpu'
+                ]
             },
             'geckodriver.firefox.bin': firefox.path,
             'phantomjs.binary.path': phantomjs.path,
@@ -56,7 +59,7 @@ function getDriverInstance(){
 }
 
 
-function consoleInfo(){
+function consoleInfo() {
 
     var args = [].slice.call(arguments),
         output = chalk.bgBlue.white('\n>>>>> \n' + args + '\n<<<<<\n');
@@ -73,7 +76,7 @@ function wait(seconds) {
     return driver;
 }
 
-function World(){
+function World() {
     /** create a list of variables to expose globally and therefore accessible within each step definition
      * @type {{driver: null, webdriverio: *, webdrivercss: *, expect: *, assert: (any), trace: consoleInfo, page: {}, shared: {}}}
      */
@@ -90,7 +93,7 @@ function World(){
 
     /** expose properties to step definition methods via global variables
      */
-    Object.keys(runtime).forEach(function (key){
+    Object.keys(runtime).forEach(function (key) {
         /** make property/method avaiable as a global (no this. prefix required)
          */
         global[key] = runtime[key];
@@ -98,11 +101,11 @@ function World(){
 
     /** import page objects (after global vars have been created)
      */
-    if (global.pageObjectPath && fs.existsSync(global.pageObjectPath)){
+    if (global.pageObjectPath && fs.existsSync(global.pageObjectPath)) {
 
         /** require all page objects using camelcase as object names
          */
-        runtime.page = requireDir(global.pageObjectPath, { camelcase: true });
+        runtime.page = requireDir(global.pageObjectPath, {camelcase: true});
 
         /** expose globally
          * @type {{}}
@@ -118,18 +121,18 @@ function World(){
 
         /** first require directories into objects by directory
          */
-        global.sharedObjectPaths.forEach(function (itemPath){
+        global.sharedObjectPaths.forEach(function (itemPath) {
 
-            if (fs.existsSync(itemPath)){
+            if (fs.existsSync(itemPath)) {
 
-                var dir = requireDir(itemPath, { camelcase: true });
+                var dir = requireDir(itemPath, {camelcase: true});
 
                 merge(allDirs, dir);
             }
         });
         /** if we managed to import some directories, expose them
          */
-        if (Object.keys(allDirs).length > 0){
+        if (Object.keys(allDirs).length > 0) {
             /** expose globally
              * @type {{}}
              */
@@ -144,7 +147,7 @@ function World(){
 
 /** export the "World" required by cucumber to allow it to expose methods within step def's
  */
-module.exports = function (){
+module.exports = function () {
 
     this.World = World;
 
@@ -154,9 +157,9 @@ module.exports = function (){
 
     /** create the driver before scenario if it's not instantiated
      */
-    this.registerHandler('BeforeScenario', function(){
+    this.registerHandler('BeforeScenario', function () {
 
-        if (!global.driver){
+        if (!global.driver) {
 
             global.driver = getDriverInstance();
             /** sets the broswer window size to maximum
@@ -168,9 +171,9 @@ module.exports = function (){
 
     /**  compile and generate a report at the end of the test run
      */
-    this.registerHandler('AfterFeatures', function (features, done){
+    this.registerHandler('AfterFeatures', function (features, done) {
 
-        if (global.reportsPath && fs.existsSync(global.reportsPath)){
+        if (global.reportsPath && fs.existsSync(global.reportsPath)) {
 
             var reportOptions = {
                 theme: 'bootstrap',
@@ -187,12 +190,12 @@ module.exports = function (){
 
     /** executed after each scenario (always closes the browser to ensure fresh tests)
      */
-    this.After(function (scenario){
+    this.After(function (scenario) {
 
-        if (scenario.isFailed()){
+        if (scenario.isFailed()) {
             /** add a screenshot to the error report
              */
-            driver.saveScreenshot().then(function (screenShot){
+            driver.saveScreenshot().then(function (screenShot) {
 
                 scenario.attach(new Buffer(screenShot, 'base64'), 'image/png');
 
