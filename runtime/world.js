@@ -33,11 +33,11 @@ function getDriverInstance() {
             javascriptEnabled: true,
             acceptSslCerts: true,
             chromeOptions: {
-                // "args": ["start-maximized"]
-                args: [
-                    'headless',
-                    'disable-gpu'
-                ]
+                 "args": ["start-maximized"]
+                // args: [
+                //     'headless',
+                //     'disable-gpu'
+                // ]
             },
             'geckodriver.firefox.bin': firefox.path,
             'phantomjs.binary.path': phantomjs.path,

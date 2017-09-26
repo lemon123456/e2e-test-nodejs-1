@@ -3,9 +3,8 @@
 ## Installation
 
 ```bash
-npm install webdriverio-cucumber-js
-npm install selenium-standalone@latest -g --save-dev
-selenium-standalone install
+npm install 
+selenium-standalone install //npm run script
 ```
 
 ##Usage
@@ -15,4 +14,5 @@ node index.js -b chrome
 or 
 node index.js -s step-definitions
 ```
+
 

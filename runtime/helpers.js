@@ -21,6 +21,7 @@ module.exports = {
 
             /** now wait for the body element to be present
              */
+
             return driver.waitUntil(driver.element('body'), timeout);
         });
     },

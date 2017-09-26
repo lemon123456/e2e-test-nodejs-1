@@ -1,37 +1,49 @@
 [
   {
-    "description": "  As an internet user\n  In order to find out more about certain user apps\n  I want to be able to search for information about the required apps",
     "elements": [
       {
-        "id": "searching-for-apps-with-google;google-search-for-the-britain's-got-talent-app",
+        "id": "login;login-with-correct-username-and-password",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "Google search for the britain's got talent app",
+        "line": 4,
+        "name": "Login with correct username and password",
         "steps": [
           {
             "arguments": [],
-            "keyword": "When ",
-            "name": "I search Google for \"britain's got talent app\"",
+            "keyword": "Given ",
+            "name": "I go to amazon home page",
             "result": {
               "status": "passed",
-              "duration": 2220329633
+              "duration": 4065805618
             },
-            "line": 8,
+            "line": 5,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:3"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:2"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I login with username \"15109242187\" and password \"q1w2e3R$\"",
+            "result": {
+              "status": "passed",
+              "duration": 9728888070
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:6"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should see some results",
+            "name": "I should see the account name is \"xu xiaojuan\"",
             "result": {
               "status": "passed",
-              "duration": 29568405
+              "duration": 875554
             },
-            "line": 9,
+            "line": 7,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:12"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:15"
             }
           },
           {
@@ -39,7 +51,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 55281663
+              "duration": 58531962
             },
             "hidden": true,
             "match": {
@@ -49,76 +61,23 @@
         ],
         "tags": [
           {
-            "name": "@search",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "searching-for-apps-with-google;google-search-for-the-angry-birds-app",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Google search for the angry birds app",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I search Google for \"angry birds app\"",
-            "result": {
-              "status": "passed",
-              "duration": 2142990323
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:3"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should see some results",
-            "result": {
-              "status": "passed",
-              "duration": 28122115
-            },
-            "line": 13,
-            "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:12"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 53722567
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:193"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@search",
+            "name": "@purchase",
             "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "searching-for-apps-with-google",
+    "id": "login",
     "keyword": "Feature",
     "line": 2,
-    "name": "Searching for apps with google",
+    "name": "Login",
     "tags": [
       {
-        "name": "@search",
+        "name": "@purchase",
         "line": 1
       }
     ],
-    "uri": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/features/google-search.feature"
+    "uri": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/features/amazon-purchase.feature"
   }
 ]
