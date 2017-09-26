@@ -1,0 +1,124 @@
+[
+  {
+    "description": "  As an internet user\n  In order to find out more about certain user apps\n  I want to be able to search for information about the required apps",
+    "elements": [
+      {
+        "id": "searching-for-apps-with-google;google-search-for-the-britain's-got-talent-app",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Google search for the britain's got talent app",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Google for \"britain's got talent app\"",
+            "result": {
+              "status": "passed",
+              "duration": 2660916219
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see some results",
+            "result": {
+              "status": "passed",
+              "duration": 31587054
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 55935422
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:190"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "searching-for-apps-with-google;google-search-for-the-angry-birds-app",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Google search for the angry birds app",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search Google for \"angry birds app\"",
+            "result": {
+              "status": "passed",
+              "duration": 2455696421
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see some results",
+            "result": {
+              "status": "passed",
+              "duration": 28779637
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/google-search-steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 55212936
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:190"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "searching-for-apps-with-google",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Searching for apps with google",
+    "tags": [
+      {
+        "name": "@search",
+        "line": 1
+      }
+    ],
+    "uri": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/features/google-search.feature"
+  }
+]

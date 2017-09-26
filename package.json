@@ -1,0 +1,40 @@
+{
+  "name": "e2e-testing",
+  "version": "1.0.0",
+  "description": "A test framework that uses webdriver.io and cucumber-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I0kits/e2e-test-nodejs.git"
+  },
+  "keywords": [
+    "functional testing",
+    "acceptance testing",
+    "bdd"
+  ],
+  "author": "tw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/I0kits/e2e-test-nodejs/issues"
+  },
+  "homepage": "https://github.com/I0kits/e2e-test-nodejs#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chalk": "^2.1.0",
+    "chromedriver": "^2.32.3",
+    "commander": "^2.11.0",
+    "cucumber": "1.2.2",
+    "cucumber-html-reporter": "0.2.8",
+    "fs-plus": "^3.0.1",
+    "geckodriver": "^1.8.1",
+    "merge": "^1.2.0",
+    "phantomjs-prebuilt": "^2.1.15",
+    "require-dir": "^0.3.2",
+    "webdrivercss-custom-v4-compatible": "github:deniskudelin/webdrivercss#beta-rc1",
+    "webdriverio": "^4.8.0",
+    "webdriverio-cucumber-js": "^1.1.4"
+  }
+}
