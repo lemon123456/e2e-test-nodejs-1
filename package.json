@@ -19,7 +19,7 @@
     "merge": "^1.2.0",
     "phantomjs-prebuilt": "^2.1.15",
     "require-dir": "^0.3.2",
-    "webdrivercss-custom-v4-compatible": "github:deniskudelin/webdrivercss#beta-rc1",
+    "webdrivercss-custom-v4-compatible": "^2.0.0-beta-rc1.1",
     "webdriverio": "^4.8.0",
     "webdriverio-cucumber-js": "^1.1.4"
   }
