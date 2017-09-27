@@ -26,15 +26,6 @@ module.exports = {
         });
     },
 
-    /**
-     * Images of each page for regression testing
-     * @returns {*|{screenshotRoot, failedComparisonsRoot, misMatchTolerance, screenWidth}}
-     */
-    cssImages: function(pageName){
-
-        return driver.webdrivercss(pageName, { name: '', elem: '' })
-    },
-
 
     /***
      * returns the value of an attribute on an element

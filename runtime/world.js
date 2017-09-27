@@ -11,10 +11,8 @@ var fs = require('fs-plus'),
     webdriverio = require('webdriverio'),
     phantomjs = require('phantomjs-prebuilt'),
     chromedriver = require('chromedriver'),
-    firefox = require('geckodriver'),
     expect = require('chai').expect,
     assert = require("chai").assert,
-    webdrivercss = require('webdrivercss-custom-v4-compatible'),
     reporter = require('cucumber-html-reporter');
 
 global.DEFAULT_TIMEOUT = 30 * 1000; // 30 seconds default
@@ -39,21 +37,10 @@ function getDriverInstance() {
                 //     'disable-gpu'
                 // ]
             },
-            'geckodriver.firefox.bin': firefox.path,
             'phantomjs.binary.path': phantomjs.path,
             path: chromedriver.path
         }
     }).init();
-
-    /** initialise WebdriverCSS for `driver` instance
-     */
-    webdrivercss.init(driver, {
-        screenshotRoot: './webdrivercss/baseline/',
-        failedComparisonsRoot: './webdrivercss/diffs/',
-        misMatchTolerance: 1.15,
-        screenWidth: screenWidth,
-        updateBaseline: false
-    });
 
     return driver;
 }
@@ -78,12 +65,11 @@ function wait(seconds) {
 
 function World() {
     /** create a list of variables to expose globally and therefore accessible within each step definition
-     * @type {{driver: null, webdriverio: *, webdrivercss: *, expect: *, assert: (any), trace: consoleInfo, page: {}, shared: {}}}
+     * @type {{driver: null, webdriverio: *, expect: *, assert: (any), trace: consoleInfo, page: {}, shared: {}}}
      */
     var runtime = {
         driver: null,               // the browser object
         webdriverio: webdriverio,   // the raw webdriverio driver module, providing access to static properties/methods
-        webdrivercss: webdrivercss, // the raw webdrivercss driver function
         expect: expect,             // expose chai expect to allow variable testing
         assert: assert,             // expose chai assert to allow variable testing
         trace: consoleInfo,         // expose an info method to log output to the console in a readable/visible format

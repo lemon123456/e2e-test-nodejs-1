@@ -6,7 +6,7 @@ abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
 
-adm-zip@0.4.7, adm-zip@^0.4.7:
+adm-zip@^0.4.7:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.4.7.tgz#8606c2cbf1c426ce8c8ec00174447fd49b6eafc1"
 
@@ -199,10 +199,6 @@ block-stream@*:
   resolved "https://registry.yarnpkg.com/block-stream/-/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
   dependencies:
     inherits "~2.0.0"
-
-bluebird@3.4.6:
-  version "3.4.6"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
 
 bluebird@^2.9.34:
   version "2.11.0"
@@ -815,15 +811,6 @@ geckodriver@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/geckodriver/-/geckodriver-1.1.2.tgz#25b8f7082731f4957298eb63bad9bfd0a3f054aa"
   dependencies:
-    got "5.6.0"
-    tar.gz "1.0.5"
-
-geckodriver@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/geckodriver/-/geckodriver-1.8.1.tgz#e2d924580b45345df016f53293a1ad7bbe7715f0"
-  dependencies:
-    adm-zip "0.4.7"
-    bluebird "3.4.6"
     got "5.6.0"
     tar.gz "1.0.5"
 
@@ -2056,23 +2043,6 @@ wdio-dot-reporter@^0.0.6:
 wdio-dot-reporter@~0.0.8:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/wdio-dot-reporter/-/wdio-dot-reporter-0.0.9.tgz#929b2adafd49d6b0534fda068e87319b47e38fe5"
-
-webdrivercss-custom-v4-compatible@^2.0.0-beta-rc1.1:
-  version "2.0.0-beta-rc1.1"
-  resolved "https://registry.yarnpkg.com/webdrivercss-custom-v4-compatible/-/webdrivercss-custom-v4-compatible-2.0.0-beta-rc1.1.tgz#bd00ee853d363a4783e4809e966aa8a949bbb8d3"
-  dependencies:
-    async "^0.9.0"
-    deepmerge "^0.2.7"
-    fs-extra "^0.18.2"
-    glob "^5.0.5"
-    gm "^1.17.0"
-    mkdirp "0.5.1"
-    node-resemble-js "0.0.4"
-    q "^1.4.1"
-    request "^2.55.0"
-    rimraf "^2.3.2"
-    tar "^2.1.0"
-    tar.gz "^1.0.1"
 
 "webdrivercss-custom-v4-compatible@github:deniskudelin/webdrivercss#beta-rc1":
   version "2.0.0-beta-rc1.1"
