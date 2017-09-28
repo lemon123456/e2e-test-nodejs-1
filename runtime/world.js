@@ -31,11 +31,12 @@ function getDriverInstance() {
             javascriptEnabled: true,
             acceptSslCerts: true,
             chromeOptions: {
-                 "args": ["start-maximized"]
-                // args: [
-                //     'headless',
-                //     'disable-gpu'
-                // ]
+                args: [
+                    'start-maximized',
+                    'disable-gpu',
+                     // headless
+                    'headless'
+                ]
             },
             'phantomjs.binary.path': phantomjs.path,
             path: chromedriver.path

@@ -13,11 +13,11 @@
             "name": "I go to amazon home page",
             "result": {
               "status": "passed",
-              "duration": 3011598094
+              "duration": 3038489703
             },
             "line": 5,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:4"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps-es6.js:4"
             }
           },
           {
@@ -26,11 +26,11 @@
             "name": "I login with username \"15109242187\" and password \"q1w2e3R$\"",
             "result": {
               "status": "passed",
-              "duration": 7873318488
+              "duration": 9121096203
             },
             "line": 6,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:8"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps-es6.js:8"
             }
           },
           {
@@ -39,11 +39,11 @@
             "name": "I should see the account information",
             "result": {
               "status": "passed",
-              "duration": 2448802382
+              "duration": 248692
             },
             "line": 7,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:13"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps-es6.js:14"
             }
           },
           {
@@ -51,11 +51,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 57077347
+              "duration": 55721868
             },
             "hidden": true,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:179"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:180"
             }
           }
         ],

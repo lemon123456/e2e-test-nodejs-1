@@ -19,6 +19,7 @@ program
     .option('-b, --browser <path>', 'name of browser to use. defaults to chrome', /^(chrome|phantomjs)$/i, 'chrome')
     .option('-r, --reports <path>', 'output path to save reports. defaults to ./reports', './reports')
     .option('-t, --tags <tagName>', 'name of tag to run')
+    .option('-g, --pattern <headless>', 'headless or not', 'headless')
     .parse(process.argv);
 
 /** store browserName globally (used within world.js to build driver)
@@ -40,6 +41,8 @@ global.sharedObjectPaths = program.sharedObjects.map(function(item){
     return path.resolve(item);
 });
 
+global.headless = program.headless;
+
 /** rewrite command line switches for cucumber
  */
 process.argv.splice(2, 100);
@@ -56,11 +59,18 @@ process.argv.push('-r', path.resolve(__dirname, './runtime/world.js'));
  */
 process.argv.push('-r', path.resolve(program.steps));
 
+// process.argv.push('-g', path.resolve(program.steps));
+
 /** add tag to the scenarios
  */
+
 if (program.tags) {
+    console.log(program.tags);
     process.argv.push('-t', program.tags);
 }
+
+
+
 
 /** add strict option (fail if there are any undefined or pending steps)
  */
