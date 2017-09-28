@@ -6,6 +6,11 @@ const purchasePage = Object.create(Page, {
             return 'https://www.amazon.cn/';
         }
     },
+    open: {
+        value: function () {
+            Page.open.call(this, '/');
+        }
+    },
     navigation: {
         get: function () {
             return driver.element('#nav-signin-tooltip > a > span');

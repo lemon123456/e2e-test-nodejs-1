@@ -1,0 +1,83 @@
+[
+  {
+    "elements": [
+      {
+        "id": "login;login-with-correct-username-and-password",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with correct username and password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I go to amazon home page",
+            "result": {
+              "status": "passed",
+              "duration": 3011598094
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I login with username \"15109242187\" and password \"q1w2e3R$\"",
+            "result": {
+              "status": "passed",
+              "duration": 7873318488
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the account information",
+            "result": {
+              "status": "passed",
+              "duration": 2448802382
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 57077347
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/runtime/world.js:179"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@purchase",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Login",
+    "tags": [
+      {
+        "name": "@purchase",
+        "line": 1
+      }
+    ],
+    "uri": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/features/amazon-purchase.feature"
+  }
+]
