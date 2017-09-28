@@ -13,9 +13,10 @@ selenium-standalone start
 
 ##Usage
 ```bash
-node index.js -b chrome
-or 
-node index.js -s step-definitions
+Headless mode: 
+node index.js -t @purchase headless
+Non-headless mode 
+node index.js -t @purchase
 ```
 
 
