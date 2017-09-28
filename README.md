@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm install 
+yarn install 
 selenium-standalone install //npm run script
 ```
 

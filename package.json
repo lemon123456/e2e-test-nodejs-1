@@ -20,5 +20,8 @@
     "require-dir": "^0.3.2",
     "webdriverio": "^4.8.0",
     "webdriverio-cucumber-js": "^1.1.4"
+  },
+  "devDependencies": {
+    "wdio-selenium-standalone-service": "0.0.9"
   }
 }
