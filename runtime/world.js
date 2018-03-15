@@ -25,11 +25,11 @@ var driver = {},
  */
 function getDriverInstance() {
     var arg = [
-        'start-maximized',
-        'disable-gpu',
+        'start-maximized'
     ];
     if(isHeadless){
         arg.push('headless');
+        arg.push('disable-gpu');
     }
 
     driver = webdriverio.remote({
@@ -42,7 +42,7 @@ function getDriverInstance() {
             },
             'phantomjs.binary.path': phantomjs.path,
             path: chromedriver.path
-        }
+        },
     }).init();
 
     return driver;

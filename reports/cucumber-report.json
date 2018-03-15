@@ -13,7 +13,7 @@
             "name": "I go to amazon home page",
             "result": {
               "status": "passed",
-              "duration": 3566938652
+              "duration": 3040734267
             },
             "line": 5,
             "match": {
@@ -26,7 +26,7 @@
             "name": "I login with username \"15109242187\" and password \"q1w2e3R$\"",
             "result": {
               "status": "passed",
-              "duration": 2471059864
+              "duration": 9057514561
             },
             "line": 6,
             "match": {
@@ -39,11 +39,11 @@
             "name": "I should see the account information",
             "result": {
               "status": "passed",
-              "duration": 206280
+              "duration": 1219056320
             },
             "line": 7,
             "match": {
-              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps-es6.js:14"
+              "location": "/Users/twer/Documents/Work/Peacock/e2e-test-nodejs/step-definitions/amazon-purchase-steps-es6.js:13"
             }
           },
           {
@@ -51,7 +51,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 55810655
+              "duration": 57877483
             },
             "hidden": true,
             "match": {

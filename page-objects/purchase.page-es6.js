@@ -30,10 +30,6 @@ class PurchasePage {
         return driver.element('#nav-link-yourAccount > span.nav-line-1');
     }
 
-    * navigateToLoginPage () {
-        yield this.navigation.click();
-    }
-
     * login(username, password) {
         yield this.username.setValue(username);
         yield this.password.setValue(password);
@@ -41,7 +37,7 @@ class PurchasePage {
     }
 
     * verify() {
-        // yield this.verifyButton.click();
+        yield this.verifyButton.click();
     }
 }
 module.exports =new PurchasePage();

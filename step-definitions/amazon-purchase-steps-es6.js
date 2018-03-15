@@ -6,7 +6,6 @@ module.exports = function(){
     });
 
     this.When(/^I login with username "([^"]*)" and password "([^"]*)"$/, function* (accountName, accountPassword) {
-        // yield purchasePage.navigateToLoginPage();
         yield purchasePage.navigation.click();
         yield purchasePage.login(accountName,accountPassword);
     });
