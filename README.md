@@ -1,7 +1,13 @@
 # e2e-test-nodejs
 
-## Install
+##Introduction
+```bash
+WebdriverIO + webdriverio-cucumber-js + chai
 
+This project uses WebdriverIO not WDIO, start selenium-standalone manually. 
+```
+
+## Install
 ```bash
 yarn install 
 
